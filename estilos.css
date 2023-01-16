@@ -1,0 +1,56 @@
+.flip_box {
+    transition: all 0.5s ease-out;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.front {
+    text-align: center;
+    padding-top: 120px;
+
+
+}
+
+.container,
+.flip_box {
+    position: relative;
+}
+
+.container,
+.flip_box,
+.front,
+.back {
+    width: 550px;
+    height:320px;
+    
+}
+
+.nirvana_logo,
+.nirvana_band{
+    padding-top: 30px;
+    padding-left: 455px;
+    
+}
+
+h1 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.front,
+.back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.back{
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+}
+
+.flipped{
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY(-180deg);
+}
